@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
@@ -10,18 +11,32 @@
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
-            <!-- icon들어갈꺼임 -->
+            <i class="fa-solid fa-wifi"></i>
         </div>
         <div class="status-bar__column">
             <span>18:23</span>
         </div>
         <div class="status-bar__column">
-            <!-- 아이콘 넣을꺼임 -->
             <span>11%</span>
-            <!-- 아이콘 넣을꺼임 -->
-            <!-- 아이콘 넣을꺼임 -->
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            <i class="fa-solid fa-bolt"></i>
         </div>
     </div>
-    
-</body>
+
+    <header class="login-header">
+        <h1 class="Login-header__title">Welcome to Kokoatalk</h1>
+        <p class="Login-header__text">If you have a Kokoa Account,<br>Log in with your email or phone number.</p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="password " placeholder="Password"/>
+        <input type="submit" value="Log In"/> 
+        <input type="submit" value="Sign Up "/> 
+        <a href="#">Find kokoa Account or Password</a>
+    </form> 
+
+    <script src="https://kit.fontawesome.com/47603626ba.js" crossorigin="anonymous"></script>
+    <!-- 스크립트는 끝나는 바디태그 앞에 붙인다  -->
+</body> 
 </html>
