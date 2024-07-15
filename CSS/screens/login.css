@@ -1,0 +1,80 @@
+.login-header{
+    margin: 96px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+}
+
+.Login-header__title{
+    margin-bottom: 24px;
+    font-size:24px;
+}
+
+.Login-header__text{
+    width: 80%;
+    opacity: .5;
+    font-size: 16px;
+}
+
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+}
+
+#login-form input{
+    border: none;
+    padding: 16px 0;
+    font-size: 18px;
+    margin-bottom: 24px;
+
+}
+
+#login-form input::placeholder{
+    color: rgba(0, 0, 0, .3);
+}
+
+#login-form input:not([type="submit"]){
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+    transition: border-color .3s ease-in-out;
+    /* 흠양 bem 안쓰고 id 지정후 그 안에서 셀렉(attribute selector)예시
+    bem 이 직관적인데, id방식은 이름고민을 덜하것 같긴함*/
+}
+
+#login-form input:hover{
+    border-color: var(--blue);
+}
+
+#login-form input[type="submit"]{
+    background-color: var(--blue);
+    color: aliceblue;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#login-form input[value="Sign Up"]{
+    background-color: var(--gray);
+    color: gray;
+}
+
+#login-form input[type="submit"]:hover{
+    background-color: #0052CA;
+    transition: background-color .3s ease-in-out;
+}
+
+#login-form input[value="Sign Up"]:hover{
+    background-color: #D1D6DB;
+    transition: background-color .3s ease-in-out;
+}
+
+#login-form a{
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .3);
+    font-size: 14px;
+    margin-top: 2px;
+}
